@@ -1,0 +1,446 @@
+英语技术文档高频易错对照清单
+英文原文 错误直译 正确技术译法 易错原因说明 
+state-of-the-art 艺术级别的状态 最先进的、尖端的 固定短语，和“艺术”无关，用于描述技术/产品领先性 
+cutting-edge 切割边缘 前沿的、尖端的 字面易误解，技术语境指处于创新前沿 
+back-end 后面的终端 后端 对应前端（front-end），指系统后台处理部分 
+front-end 前面的终端 前端 指用户交互界面相关的系统部分 
+on the fly 在飞的时候 实时地、动态地 技术语境指程序运行中即时处理，非字面含义 
+off the shelf 从架子上取下 现成的、商用现货的 形容无需定制的标准化产品/组件 
+rule of thumb 拇指规则 经验法则、经验方法 固定俗语，技术文档中用于简化的参考标准 
+go live 去现场 上线、投入使用 指系统/产品正式启用的动作 
+fallback 向后掉落 降级方案、备用方案 故障发生时自动切换的备用策略 
+workaround 工作围绕 临时解决方案、规避方案 非根本修复，仅临时绕过问题的方法 
+at your disposal 在你的处理下 供你使用、由你支配 技术文档中表示资源/工具可随时调用 
+as per 按照每 根据、依据 正式书面用语，比“according to”更简洁 
+due diligence 应有的勤奋 尽职调查 技术合作/采购中对产品/服务的全面核查 
+non-trivial 不平凡的 非易事的、复杂的 指问题/任务需要大量技术投入，不可轻视 
+out of the box 盒子外面 开箱即用的 形容产品无需额外配置即可直接使用 
+bottleneck 瓶子颈部 瓶颈 技术语境指系统性能的限制节点 
+low-hanging fruit 低垂的果实 容易实现的目标、唾手可得的成果 比喻技术优化中低成本高回报的任务 
+proof of concept (POC) 概念的证明 概念验证 指验证技术可行性的初步测试项目 
+end-to-end 端到端 端到端的（全流程的） 虽字面相近，但需强调“覆盖从起点到终点全流程”的技术含义 
+hard-coded 硬编码 硬编码的（固定写死的） 需补充说明：指参数直接写入代码，无法通过配置修改 
+
+高频易错句式对照
+英文句式 错误直译 正确技术译法 适用场景 
+This is to ensure that... 这是去确保…… 此举旨在确保…… 技术文档中说明设计/操作目的 
+In the event of... 在……的事件中 若发生……、万一…… 描述故障/异常场景的条件状语 
+A is intended for B A被意图给B A 适用于 B / A 是为 B 设计的 说明工具/功能的适用对象 
+It should be noted that... 它应该被注意到…… 请注意…… 文档中强调重要事项 
+Prior to doing A 在做A之前 在执行A操作之前 技术流程的步骤顺序描述 
+By doing so, we can... 通过这么做，我们能…… 采用此方法，可实现…… 更简洁的技术书面表达 
+In compliance with... 在顺从……中 遵照……、符合…… 说明遵循的标准/
+1) 通用/文档结构
+
+• documentation / docs：文档（资料）
+
+• technical documentation：技术文档
+
+• user guide / user manual：用户指南 / 使用说明书
+
+• quick start guide：快速入门指南
+
+• getting started：入门
+
+• tutorial：教程
+
+• how-to：操作指南
+
+• reference：参考（手册/资料）
+
+• API reference：API 参考
+
+• configuration：配置
+
+• setup：安装/部署/设置（按语境）
+
+• installation：安装
+
+• deployment：部署
+
+• administration / admin guide：管理 / 管理员指南
+
+• troubleshooting：故障排查
+
+• FAQ：常见问题
+
+• limitations：限制
+
+• known issues：已知问题
+
+• release notes / changelog：发布说明 / 更新日志
+
+• version：版本
+
+• compatibility：兼容性
+
+• prerequisites：前提条件
+
+• requirements：要求（系统要求/条件）
+
+• scope：范围
+
+• audience：受众
+
+• convention：约定/规范
+
+• glossary：术语表
+
+• notation：符号说明
+
+2) 软件/系统/架构
+
+• software：软件
+
+• system：系统
+
+• application / app：应用（程序）
+
+• platform：平台
+
+• architecture：架构
+
+• module：模块
+
+• component：组件
+
+• service：服务
+
+• client / server：客户端 / 服务器
+
+• backend / frontend：后端 / 前端
+
+• database / DB：数据库
+
+• instance：实例
+
+• node：节点
+
+• cluster：集群
+
+• container：容器
+
+• image：镜像
+
+• orchestration：编排
+
+• scalability：可扩展性
+
+• reliability：可靠性
+
+• availability：可用性
+
+• performance：性能
+
+• latency：延迟
+
+• throughput：吞吐量
+
+• load：负载
+
+• resource：资源
+
+• dependency：依赖
+
+• integration：集成
+
+• workflow：工作流
+
+• pipeline：流水线
+
+• batch：批处理
+
+• real-time：实时
+
+3) 接口/协议/通信
+
+• interface / API：接口 / API
+
+• endpoint：端点
+
+• request / response：请求 / 响应
+
+• payload：载荷（请求/响应体数据）
+
+• header：头部
+
+• parameter / param：参数
+
+• query parameter：查询参数
+
+• path parameter：路径参数
+
+• body：消息体
+
+• status code：状态码
+
+• error code：错误码
+
+• message：消息
+
+• timeout：超时
+
+• retry：重试
+
+• rate limit：限流
+
+• authentication / auth：认证
+
+• authorization：授权
+
+• token：令牌
+
+• credentials：凭据
+
+• session：会话
+
+• protocol：协议
+
+• HTTP / HTTPS：HTTP / HTTPS
+
+• TCP / UDP：TCP / UDP
+
+• TLS / SSL：TLS / SSL
+
+• JSON / XML：JSON / XML
+
+• encoding / decoding：编码 / 解码
+
+• encryption / decryption：加密 / 解密
+
+• certificate：证书
+
+• proxy：代理
+
+• gateway：网关
+
+• firewall：防火墙
+
+4) 配置/操作/运维
+
+• setting：设置项
+
+• option：选项
+
+• flag：标志（命令行参数常用）
+
+• command：命令
+
+• command line / CLI：命令行 / CLI
+
+• argument / args：参数
+
+• input / output：输入 / 输出
+
+• log：日志
+
+• log level：日志级别（DEBUG/INFO/WARN/ERROR/FATAL）
+
+• monitor / monitoring：监控
+
+• alert：告警
+
+• metric：指标
+
+• dashboard：仪表盘
+
+• backup：备份
+
+• restore：恢复
+
+• upgrade / update：升级 / 更新
+
+• rollback：回滚
+
+• migration：迁移
+
+• restart：重启
+
+• reset：重置
+
+• validate：校验
+
+• verify：验证
+
+• check：检查
+
+• diagnose：诊断
+
+• ping / test：连通性测试 / 测试
+
+• connectivity：连通性
+
+• permission：权限
+
+• role：角色
+
+• access control：访问控制
+
+• audit log：审计日志
+
+5) 数据/算法/测试（偏软件与AI通用）
+
+• data：数据
+
+• dataset：数据集
+
+• model：模型
+
+• training / inference：训练 / 推理
+
+• accuracy / precision / recall：准确率 / 精确率 / 召回率
+
+• error / loss：误差 / 损失
+
+• feature：特征
+
+• label：标签
+
+• prediction：预测
+
+• confidence：置信度
+
+• threshold：阈值
+
+• overfitting / underfitting：过拟合 / 欠拟合
+
+• pipeline：流程/流水线
+
+• test / testing：测试
+
+• unit test：单元测试
+
+• integration test：集成测试
+
+• regression test：回归测试
+
+• coverage：覆盖率
+
+• bug：缺陷
+
+• issue：问题（工单/缺陷）
+
+• fix：修复
+
+• patch：补丁
+
+• regression：回归（问题复现/性能回退）
+
+6) 硬件/电子（常见基础）
+
+• hardware：硬件
+
+• device：设备
+
+• board：板卡/主板
+
+• chip / IC：芯片 / 集成电路
+
+• sensor：传感器
+
+• module：模块
+
+• power supply：电源
+
+• voltage / current：电压 / 电流
+
+• temperature：温度
+
+• connector：连接器
+
+• pin：引脚
+
+• interface：接口（如 UART/I2C/SPI）
+
+• firmware：固件
+
+• boot：启动
+
+• reset：复位
+
+• debug：调试
+
+• flash / memory：闪存 / 存储器
+
+• GPIO：通用输入输出
+
+7) 常见动词/短语（技术写作高频）
+
+• enable / disable：启用 / 禁用
+
+• activate / deactivate：激活 / 停用
+
+• configure：配置
+
+• install / uninstall：安装 / 卸载
+
+• launch / start / stop：启动 / 开始 / 停止
+
+• run / execute：运行 / 执行
+
+• deploy：部署
+
+• connect / disconnect：连接 / 断开
+
+• upload / download：上传 / 下载
+
+• import / export：导入 / 导出
+
+• generate：生成
+
+• display / show：显示
+
+• support：支持
+
+• require：需要/要求
+
+• allow / prevent：允许 / 禁止
+
+• provide：提供
+
+• include / exclude：包含 / 排除
+
+• specify：指定
+
+• indicate：指示/表明
+
+• ensure：确保
+
+• must / should / may：必须 / 应当 / 可以（规范语气）
+
+• note that：请注意
+
+• be compatible with：与……兼容
+
+• be responsible for：负责/承担
+
+• in order to：为了
+
+• as soon as：一旦
+
+• in case of：如果/在……情况下
+优译杯全国技术翻译大赛 决赛评审打分标准拆解表
+
+总分：100分 | 核心维度：准确性40% + 可用性30% + 规范性15% + 创新性15%
+评分维度 分值占比 核心考察点 加分项 扣分点 
+准确性 40分 1. 术语翻译全程统一，契合行业标准（如IEEE、ISO）2. 技术概念无偏差，无增删原文关键信息3. 数据、公式、参数完全对应，无错漏 1. 多义术语根据语境精准区分译法，附术语表佐证2. 复杂技术原理转化准确，无歧义 1. 术语前后不一致，每处扣2-3分2. 直译导致技术概念误解，单次扣5-8分3. 数据/参数错误，每处扣3分 
+可用性 30分 1. 英文表达符合技术文档范式（短句为主、逻辑清晰）2. 目标受众（海外工程师/用户）易读易懂3. 句式、语态适配文本类型（如规范用shall，说明用will） 1. 主动优化中文长句结构，拆分重组后更符合英文阅读习惯2. 合理调整信息层级，提升文档查阅效率 1. 中式英文句式生硬，单次扣2分2. 情态动词shall/will/may混用，每处扣1分3. 长句堆砌导致逻辑混乱，单次扣3-5分 
+规范性 15分 1. 格式符合要求（PDF提交、无个人信息、页码规范）2. 缩写首次出现标注全称（如MQ→Message Queue）3. 标点、拼写、语法零错误 1. 自制术语对照表作为附件提交，格式清晰2. 严格遵循目标领域文档规范（如API文档的RESTful风格） 1. 格式违规（如提交Word、含个人信息），扣5分2. 缩写未标注全称、标点错误，每处扣0.5分3. 语法/拼写错误，每处扣1分 
+创新性 15分 1. 译写优化而非机械直译，兼顾准确性与可读性2. 针对技术文档特点，合理调整表达逻辑3. PPT思路阐述清晰，亮点突出 1. 直译与优化译法对比展示，优化理由充分2. 结合目标受众需求，创新信息呈现方式（如增加注释） 1. 全程机械直译，无任何优化，扣5-8分2. PPT思路模糊，未说明难点解决方案，扣3-5分 
+
+额外扣分项（一票否决/严重扣分）
+
+1. 提交的译文或PPT包含个人信息（姓名、学校等），直接扣除10分，并影响匿名评审公平性。
+
+2. 译文增删原文核心技术信息，导致内容失真，视情节扣10-20分，严重者直接取消评奖资格。
+
+3. 抄袭或引用他人译文未标注，一经查实，直接淘汰。
+优译杯决赛译法创新实战案例（中译英）
+
+案例聚焦中文技术长句拆分、术语精准适配、情态动词规范三大核心优化方向，对比直译与创新译法的差异，附优化思路解析。
+类别 中文原文 直译版本（失分） 创新译法（得分） 优化思路解析 
+设备操作说明 当系统检测到输入电压异常时，须立即停止运行相关负载，并将故障信息上传至监控平台。 When the system detects the input voltage is abnormal, it must stop running related loads immediately, and upload the fault information to the monitoring platform. Upon detection of abnormal input voltage, the system shall immediately shut down the associated loads and transmit fault data to the monitoring platform. 1. 用 Upon detection of 替代冗长从句，符合英文技术文档简洁性；2. shall 替代 must，契合技术规范强制语气；3. associated loads 比 related loads 更专业，transmit fault data 比 upload the fault information 更精准。 
+API接口文档 本接口不支持批量提交请求，且仅在请求头中携带有效令牌的情况下，方可返回正确数据。 This interface does not support submitting requests in batches, and only when the request header carries a valid token can it return correct data. Batch request submission is not supported by this interface. Correct data can be returned only if a valid token is included in the request header. 1. 拆分中文长句为两个英文短句，逻辑更清晰；2. 被动语态 is not supported 符合技术文档客观表述习惯；3. included 替代 carries，更贴合接口文档术语；4. only if 替代 only when，条件限定更严谨。 
+硬件规格书 该传感器可在-20℃至60℃的温度范围内稳定工作，超出此范围则可能出现测量偏差。 This sensor can work stably in the temperature range of -20℃ to 60℃, and if it exceeds this range, measurement deviation may occur. The sensor maintains stable operation within a temperature range of -20℃ to 60℃. Measurement deviations may arise if the operating temperature goes beyond this range. 1. maintains stable operation 替代 can work stably，表述更专业；2. 省略冗余主语 it，符合英文简洁原则；3. 复数 deviations 替代单数 deviation，更符合技术场景下的可能性表述；4. goes beyond 替代 exceeds，避免词汇重复。 
+运维故障排查 若重启设备后故障仍未解决，应先检查网络连接是否正常收，再对相关配置进行校验。 If the fault is not solved after restarting the device, you should first check whether the network connection is normal, then verify the relevant configuration. If the fault persists after device restart, first verify the normal connectivity of the network and then conduct validation on the associated configurations. 1. persists 替代 is not solved，更简洁地道；2. 省略第二人称 you，技术文档无需人称主语；3. normal connectivity of the network 替代 whether the network connection is normal，名词化结构更书面；4. associated configurations 替代 relevant configuration，术语统一。 
+软件升级指南 此版本升级包仅适用于V2.1及以上版本的系统，强行安装低。版本系统将覆盖。 This version upgrade package is only applicable to systems of V2.1 and above versions. Forcing installation on low-version systems will cover the system. This upgrade package is compatible only with systems running V2.1 or later versions. Forcible installation on earlier versions will result in system overwriting. 1. is compatible only with 替代 is only applicable to，更贴合软件领域术语；2. running V2.1 or later versions 替代 of V2.1 and above versions，表述更自然；3. earlier versions 替代 low-version systems，避免中式英文；4. will result in system overwriting 替代 will cover the system，语义完整无歧义。 
